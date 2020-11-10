@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lena 60</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="tailwind.css" rel="stylesheet">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_3hHYuoffDd23cuKS14YTi1ACbVLeIXU&callback=initMap&libraries=&v=weekly" defer></script>
+        <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
+    </head>
+    <style type="text/css">
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+    <body class="bg-gray-100 flex flex-col min-h-screen">
+        <!-- Header, mid section, footer-->
+
+        <!-- Header -->
+        <div class="bg-gray-800 text-gray-200 p-4 w-screen h-auto">
+            <h1 class="text-2xl md:text-4xl text-center">Lenas dag</h1>
+        </div>
+
+    <!-- Mid section-->
+      <div class="mt-8 ml-8 mr-8 font-sans text-base text-gray-800 text-left flex-grow">
+        <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="rounded-lg md:w-56" src="http://rosentech.hemsida.eu/images/10D3E214-223B-42FB-A852-BC183B9BFB91.jpeg" width="448" height="299" alt="Bryggudden vintervy">
+            </div>
+            <div class="mt-4 md:mt-0 md:ml-6">
+                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Upptäcktsfärd!</div>
+                <h2 class="block mt-1 text-lg leading-tight font-semibold text-gray-900"></h2>
+                <p class="mt-2 text-gray-600">Välkommen till <span class="font-bold">Lena 60</span>:s hopp-och-lek-sida på webben.</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="mt-2 text-gray-600">Nu ska vi leta roliga och goda saker. På varje sida finns en karta som visar ett mål. 
+                Det blir en liten promenad innan vi är klara, men vi går varvet i det fina vädret så blir vi belönade kanske inte bara 
+                när vi kommer fram, utan kanske redan under promenaden.</p>
+        </div>
+      </div>
+
+        <!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+<div class="bg-gray-100 px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+    <div class="flex-1 flex justify-between sm:hidden">
+      <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+        Föregående
+      </a>
+      <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+        Nästa
+      </a>
+    </div>
+    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+      <div>
+        <nav class="relative z-0 inline-flex shadow-sm">
+          <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Previous">
+            <!-- Heroicon name: chevron-left -->
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="point1.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            1
+          </a>
+          <a href="point2.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            2
+          </a>
+          <a href="point3.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            3
+          </a>
+          <a href="point4.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            4
+          </a>
+          <a href="point5.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            5
+          </a>
+          <a href="point6.html" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            6
+          </a>
+          <a href="#" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Next">
+            <!-- Heroicon name: chevron-right -->
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+          <!-- Footer section -->
+          <div class="mt-8 bg-gray-800 text-gray-300 text-xs p-4 w-screen h-12">
+            <p><a class="hover:text-gray-200 hover:font-bold" href="index.html">Tillbaka till startsidan...</a></p>
+        </div>
+
+
+  
+        <script src="" async defer></script>
+    </body>
+</html>
