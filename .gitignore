@@ -1,0 +1,11 @@
+node_modules/
+dist/
+public/
+site/data/webpack.json
+/npm-debug.log
+yarn-error.log
+.DS_Store
+assets/
+package-lock.json
+package.json
+tailwind.config.js
