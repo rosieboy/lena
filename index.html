@@ -4,59 +4,76 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lena 60 – Start</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="tailwind.css" rel="stylesheet">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_3hHYuoffDd23cuKS14YTi1ACbVLeIXU&callback=initMap&libraries=&v=weekly" defer></script>
-        <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
-    </head>
-    <style type="text/css">
-        #map {
-            height: 400px;
-            /* The height is 400 pixels */
-            width: 100%;
-            /* The width is the width of the web page */
-        }
-    </style>
-    <body class="mt-4 ml-4 mr-4">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!--- https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA_3hHYuoffDd23cuKS14YTi1ACbVLeIXU -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lena 60</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="tailwind.css" rel="stylesheet">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_3hHYuoffDd23cuKS14YTi1ACbVLeIXU&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src=https://code.jquery.com/jquery-3.4.1.min.js
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
+</head>
+<style type="text/css">
+    #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+    }
+</style>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header, mid section, footer-->
+
+    <!-- Header -->
+    <div class="bg-gray-800 text-gray-200 w-screen h-auto">
+        <a href="index.html"
+        class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+        Lenas dag!
+    </a>
+    </div>
+
+    <!-- Mid section-->
 
 
-        <h1 class="font-semibold text-3xl">LENA</h1>
+    <!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+    <div class="bg-gray-50">
+        <div
+            class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                Idag firar vi Lena.
+                <br>
+                <span class="text-indigo-600">Let's go!</span>
+            </h2>
+            <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        Starta
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="info.html"
+                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        Mer info
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <p>Here we go. <a href="http://maps.apple.com/?&q=Fråga 1&ll=59.3671,13.5090&z=17&t=s">Navigera hit med Apples Karta</a></p>
+    <!-- Footer section -->
+    <div>
 
-        <!--The div element for the map -->
-        <div id="map"></div>
+    </div>
+</body>
 
-        <script>
-            // Initialize and add the map
-            function initMap() {
-              // The location of Uluru
-              const uluru = { lat: 59.3671, lng: 13.5090 };
-              // The map, centered at Uluru
-              const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: uluru,
-              });
-              // The marker, positioned at Uluru
-              const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-              });
-            }
-          </script>   
-          
-          <p><a href="punkt2.html">Nästa punkt...</a></p>
-
-        <script src="" async defer></script>
-    </body>
 </html>
